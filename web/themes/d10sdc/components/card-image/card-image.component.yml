@@ -1,0 +1,36 @@
+name: Card with image
+description: Card with image and CTA link
+props:
+  type: object
+  properties:
+    heading:
+      title: Heading
+      description: The title of the card.
+      examples:
+        - Join us at the Conference
+      type: string
+    ctaButton:
+      title: CTA Button
+      type: string
+      examples:
+        - Click me!
+    image:
+      title: Media Image
+      description: Image for the card
+      type: string
+    description:
+      title: Description
+      description: card body.
+      type: string
+    category:
+      title: Category
+      description: card category.
+      type: string
+slots:
+  body:
+    title: Body
+    required: true
+libraryOverrides:
+  dependencies:
+    - core/drupal
+    - core/once

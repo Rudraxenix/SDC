@@ -1,0 +1,23 @@
+<section class="banner-component py-5">
+	<h2 class="text-3xl py-2 text-black font-bold text-center">{{ sTitle }}</h2>
+<div class="relative h-52">
+	<div class="h-full">
+		<div class="[&_img]:w-full [&_img]:h-full [&_div]:h-full [&_img]:object-cover h-full">{{ image }}</div>
+		<div class="text-outer absolute w-full top-0 left-0 right-0 bottom-0 p-7 bg-black bg-opacity-40">
+			<div class="w-full h-full">
+				<div class="w-full flex flex-col justify-center h-full">
+					<div class="flex flex-wrap justify-between items-center">
+						<h2 class="text-3xl py-2 text-white font-semibold">{{ heading }}</h2>
+						<div class="[&_a]:bg-[#a82e30] [&_a]:text-white [&_a]:hover:bg-white [&_a]:text-base [&_a]:uppercase [&_a]:px-5 [&_a]:py-2 [&_a]:hover:text-[#a82e30] [&_a]:block">
+							{{ ctaButton }}
+						</div>
+					</div>
+					<div class="w-full [&_p]:text-white [&_p]:text-lg pt-5">
+						{{ description }}
+					</div>
+				</div>	
+			</div>
+		</div>
+	</div>
+</div>
+</section>

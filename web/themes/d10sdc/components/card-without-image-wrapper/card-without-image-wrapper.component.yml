@@ -1,0 +1,22 @@
+name: Card without image wrapper
+description: Card without image wrapper
+props:
+  type: object
+  properties:
+    sTitle:
+      title: Heading
+      description: Section title.
+      examples:
+        - Section
+      type: string
+    carditems:
+      title: Card without image
+      type: array
+slots:
+  body:
+    title: Body
+    required: true
+libraryOverrides:
+  dependencies:
+    - core/drupal
+    - core/once
